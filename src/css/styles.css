@@ -38,19 +38,22 @@ ul, li {
   justify-content: start;
   position: relative;
   top: 8px;
-  margin: 0px 16px;
+  margin: 0px 16px 0px 26px;
 }
 .header-container .header-top .header-top-text {
   font-weight: bold;
+  align-items: center;
 }
 .header-container .header-top .social-list-wrap {
   display: flex;
 }
 .header-container .header-top .social-list-item {
   padding: 0px 12px;
+  text-decoration: none;
 }
 .header-container .header-top .social-list-item i {
   font-size: 20px;
+  color: rgb(133, 125, 125);
 }
 .header-container .underline-header {
   background-color: #3d3a3a;
@@ -96,6 +99,24 @@ ul, li {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
+}
+.header-container .cart-header {
+  height: 18px;
+  padding: 18px 6px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.header-container .cart-header-icon,
+.header-container .cart-header-text,
+.header-container .cart-header-count {
+  padding: 0px 4px;
+}
+.header-container .cart-header-count {
+  background-color: #fff;
+  margin-left: 4px;
+}
+.header-container .cart-header-count span {
+  color: #000;
 }
 .header-container .cart-header {
   background-color: rgb(5, 96, 153);
