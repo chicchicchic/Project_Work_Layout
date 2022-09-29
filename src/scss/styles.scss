@@ -50,19 +50,64 @@
 
   .logo-text-bottom,
   .drop-down-header,
-  .input-header,
+  .search-header-wrap,
   .cart-header {
     margin-left: 22px;
     align-items: center;
     display: flex;
   }
 
-  .drop-down-icon {
-    margin-left: 4px;
-    i {
-      font-size: 17px;
-      font-weight: 600;
+  // Drop-down
+  .drop-down-header {
+    position: relative;
+
+    // ul {
+    //   position: absolute;
+    //   top: 60px;
+    //   background-color: $orange-color;
+    //   width: 100%;
+    // }
+
+    .drop-down-text {
+      cursor: pointer;
+      display: block;
     }
+
+    .category-drop-down {
+      position: absolute;
+      top: 70px;
+      background-color: $orange-color;
+      width: 350px;
+
+      &:before {
+        content: '';
+        height: 20px;
+        width: 20px;
+        background: red;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        transform: rotate(45deg);
+
+        display: flex;
+        z-index: -1;
+      }
+
+    }
+    
+    .meal-type,
+    .ingredient {
+      span {
+        float: right;
+      }
+    }
+
+
+  }
+
+  // Search Header Wrap
+  .search-header-wrap {
+    width: 400px;
   }
 
   .search-header {
@@ -70,6 +115,7 @@
     border: 2px solid $gray-color;
     border-radius: 4px;
     color: $purple-color;
+    width: 100%;
 
     &::placeholder {
       color: $primary-color;
@@ -90,11 +136,13 @@
     }
   }
 
+  // Cart Header
   .cart-header {
     height: 18px;
     padding: 18px 6px;
     margin-top: 10px;
     border-radius: 4px;
+    background-color: $primary-color;
   }
 
   .cart-header-icon,
@@ -103,20 +151,9 @@
     padding: 0px 4px;
   }
 
+  .cart-header-text,
   .cart-header-count {
-    background-color: $font-main-color;
-    margin-left: 4px;
-    span {
-      color: $black-color;
-    }
-  }
-
-  
-
-  
-
-  .cart-header {
-    background-color: $primary-color;
+    color: $font-main-color;
   }
 
   .cart-header-icon {
@@ -125,10 +162,18 @@
     }
   }
 
-  .cart-header-text,
   .cart-header-count {
-    color: $font-main-color;
+    background-color: $font-main-color;
+    margin-left: 4px;
+    border-radius: 2px;
+    span {
+      color: $black-color;
+    }
   }
+
+  
+
+  
 
   
 

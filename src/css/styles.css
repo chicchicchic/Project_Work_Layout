@@ -66,24 +66,50 @@ ul, li {
 }
 .header-container .logo-text-bottom,
 .header-container .drop-down-header,
-.header-container .input-header,
+.header-container .search-header-wrap,
 .header-container .cart-header {
   margin-left: 22px;
   align-items: center;
   display: flex;
 }
-.header-container .drop-down-icon {
-  margin-left: 4px;
+.header-container .drop-down-header {
+  position: relative;
 }
-.header-container .drop-down-icon i {
-  font-size: 17px;
-  font-weight: 600;
+.header-container .drop-down-header .drop-down-text {
+  cursor: pointer;
+  display: block;
+}
+.header-container .drop-down-header .category-drop-down {
+  position: absolute;
+  top: 70px;
+  background-color: orange;
+  width: 350px;
+}
+.header-container .drop-down-header .category-drop-down:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: red;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  transform: rotate(45deg);
+  display: flex;
+  z-index: -1;
+}
+.header-container .drop-down-header .meal-type span,
+.header-container .drop-down-header .ingredient span {
+  float: right;
+}
+.header-container .search-header-wrap {
+  width: 400px;
 }
 .header-container .search-header {
   padding: 8px;
   border: 2px solid rgb(133, 125, 125);
   border-radius: 4px;
   color: purple;
+  width: 100%;
 }
 .header-container .search-header::placeholder {
   color: rgb(5, 96, 153);
@@ -105,28 +131,27 @@ ul, li {
   padding: 18px 6px;
   margin-top: 10px;
   border-radius: 4px;
+  background-color: rgb(5, 96, 153);
 }
 .header-container .cart-header-icon,
 .header-container .cart-header-text,
 .header-container .cart-header-count {
   padding: 0px 4px;
 }
+.header-container .cart-header-text,
 .header-container .cart-header-count {
-  background-color: #fff;
-  margin-left: 4px;
-}
-.header-container .cart-header-count span {
-  color: #000;
-}
-.header-container .cart-header {
-  background-color: rgb(5, 96, 153);
+  color: #fff;
 }
 .header-container .cart-header-icon i {
   color: #fff;
 }
-.header-container .cart-header-text,
 .header-container .cart-header-count {
-  color: #fff;
+  background-color: #fff;
+  margin-left: 4px;
+  border-radius: 2px;
+}
+.header-container .cart-header-count span {
+  color: #000;
 }
 .header-container .tab-des-nav {
   display: none;
