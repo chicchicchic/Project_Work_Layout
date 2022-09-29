@@ -7,6 +7,7 @@
   background-color: $gray-light-color;
   position: relative;
 
+  // Header Top
   .header-top {
     display: flex;
     height: 34px;
@@ -39,23 +40,8 @@
     height: 2px;
   }
 
+  // Header Bottom
   .header-bottom {
-    display: flex;
-  }
-
-  .search-header {
-    width: 23px;
-  }
-
-  .search-header-btn {
-    background-color: $gray-dark-color;
-    i {
-      color: $font-main-color;
-    }
-  }
-
-  .drop-down-header,
-  .cart-header {
     display: flex;
   }
 
@@ -64,7 +50,46 @@
   .input-header,
   .cart-header {
     margin-left: 22px;
+    align-items: center;
+    display: flex;
   }
+
+  .drop-down-icon {
+    margin-left: 4px;
+    i {
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+
+  .search-header {
+    padding: 8px;
+    border: 2px solid $gray-color;
+    border-radius: 4px;
+    color: $purple-color;
+
+    &::placeholder {
+      color: $primary-color;
+      font-size: 16px;
+    }
+
+  }
+  
+  .search-header-btn {
+    background-color: $gray-dark-color;
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-left: 1px;
+    i {
+      color: $font-main-color;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  
+
+  
 
   .cart-header {
     background-color: $primary-color;

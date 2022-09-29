@@ -61,24 +61,41 @@ ul, li {
 .header-container .header-bottom {
   display: flex;
 }
-.header-container .search-header {
-  width: 23px;
-}
-.header-container .search-header-btn {
-  background-color: #3d3a3a;
-}
-.header-container .search-header-btn i {
-  color: #fff;
-}
-.header-container .drop-down-header,
-.header-container .cart-header {
-  display: flex;
-}
 .header-container .logo-text-bottom,
 .header-container .drop-down-header,
 .header-container .input-header,
 .header-container .cart-header {
   margin-left: 22px;
+  align-items: center;
+  display: flex;
+}
+.header-container .drop-down-icon {
+  margin-left: 4px;
+}
+.header-container .drop-down-icon i {
+  font-size: 17px;
+  font-weight: 600;
+}
+.header-container .search-header {
+  padding: 8px;
+  border: 2px solid rgb(133, 125, 125);
+  border-radius: 4px;
+  color: purple;
+}
+.header-container .search-header::placeholder {
+  color: rgb(5, 96, 153);
+  font-size: 16px;
+}
+.header-container .search-header-btn {
+  background-color: #3d3a3a;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin-left: 1px;
+}
+.header-container .search-header-btn i {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
 }
 .header-container .cart-header {
   background-color: rgb(5, 96, 153);
