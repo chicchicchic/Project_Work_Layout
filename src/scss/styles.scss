@@ -61,12 +61,9 @@
   .drop-down-header {
     position: relative;
 
-    // ul {
-    //   position: absolute;
-    //   top: 60px;
-    //   background-color: $orange-color;
-    //   width: 100%;
-    // }
+    input {
+      display: none;
+    }
 
     .drop-down-text {
       cursor: pointer;
@@ -75,24 +72,56 @@
 
     .category-drop-down {
       position: absolute;
+      padding: 16px;
       top: 70px;
-      background-color: $orange-color;
+      background-color: $gray-light-color;
+      border-radius: 4px;
       width: 350px;
+      display: none;
+      z-index: 1;
+      
 
       &:before {
         content: '';
         height: 20px;
         width: 20px;
-        background: red;
+        background: $gray-light-color;
         position: absolute;
         top: -10px;
         left: 10px;
         transform: rotate(45deg);
-
-        display: flex;
-        z-index: -1;
+        z-index: 0;       
       }
+    }
 
+    #browse-drop-down {
+      &:checked {
+        
+      }
+    }
+
+    .category-drop-down-wrap {
+      margin-top: 10px;
+    }
+
+    .category-child-wrap {
+      margin-left: 28px;
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        color: $black-color;
+        &:hover {
+          color: $purple-color;
+          font-weight: bold;
+          transition: .3s;
+        }
+      }
+    }
+
+    .underline-category {
+      width: 100%;
+      background-color: blue;
+      height: 2px;
     }
     
     .meal-type,
@@ -171,13 +200,6 @@
     }
   }
 
-  
-
-  
-
-  
-
-  
 
   // Tablet & Destop Nav
   .tab-des-nav {
@@ -209,12 +231,15 @@
     }
     
   }
-
   
+}
 
-  
-
-  
+.main-content {
+  background: $primary-color;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
 }
 
 // Introduce

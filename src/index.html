@@ -69,18 +69,23 @@
 
           <!-- dropdown -->
           <div class="drop-down-header">
-            <label for="" class="drop-down-text">
+            <label for="browse-drop-down" class="drop-down-text">
               BROWSE
               <span class="ti-arrow-circle-down"></span>
             </label>
 
+            <input type="checkbox" id="browse-drop-down">
+
             <ul class="category-drop-down">
-              <li>
+              <li class="category-drop-down-wrap">
                 <label for="" class="meal-type">
                   Meal Type
                   <span class="ti-arrow-circle-down"></span>
                 </label>
-                <ul>
+
+                <div class="underline-category"></div>
+
+                <ul class="category-child-wrap">
                   <li><a href="#">Appetizers & Snacks Recipes</a></li>
                   <li><a href="#">Breakfast & Brunch Recipes</a></li>
                   <li><a href="#">Desserts</a></li>
@@ -88,12 +93,16 @@
                   <li><a href="#">Drinks</a></li>
                 </ul>
               </li>
-              <li>
+
+              <li class="category-drop-down-wrap">
                 <label for="" class="ingredient">
                   Ingredient
                   <span class="ti-arrow-circle-down"></span>
                 </label>
-                <ul>
+
+                <div class="underline-category"></div>
+
+                <ul class="category-child-wrap">
                   <li><a href="#">Beef</a></li>
                   <li><a href="#">Chicken</a></li>
                   <li><a href="#">Pasta</a></li>
@@ -129,6 +138,8 @@
       </div>
 
     </header>
+
+    <div class="main-content"></div>
 
     <!-- Introduce -->
     <!-- <div class="introduce-container">
