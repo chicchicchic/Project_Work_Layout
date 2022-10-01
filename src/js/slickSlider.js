@@ -39,7 +39,7 @@ $('.brand-list').slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     centerMode:true,
     centerPadding: '30px', 
@@ -62,7 +62,7 @@ $('.brand-list').slick({
                 centerMode: true,
                 infinite: true,
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 1,
                 centerPadding: '0px', 
             }
         }
