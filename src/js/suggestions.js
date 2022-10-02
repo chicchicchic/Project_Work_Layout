@@ -1,0 +1,23 @@
+let suggestions = [
+    "Channel",
+    "CodingLab",
+    "CodingAtHome",
+    "Youtube",
+    "Youtube Channel",
+    "Blogger",
+    "Bollywood",
+    "Vlogger",
+    "Vechiles",
+    "Facebook",
+    "Freelancer",
+    "Facebook Pages",
+    "Designer",
+    "Devops",
+    "web Designer",
+    "Web Development",
+    "Login Form in HTML & CSS",
+    "How to became Freelancer",
+    "How to start gaming chanels",
+    "What does HTML stands for?",
+    "What does CSS stands for?"
+];
