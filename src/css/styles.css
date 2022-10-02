@@ -211,10 +211,9 @@ ul, li {
   top: calc(100% + 14px);
   right: -14px;
   background-color: #fff;
-  width: 400px;
+  width: 510px;
   border-radius: 2px;
   box-shadow: 0 2px 10px rgb(133, 125, 125);
-  display: none;
 }
 .header-container .cart-list:after {
   content: "";
@@ -235,7 +234,7 @@ ul, li {
   top: -30px;
 }
 .header-container .cart-list-empty {
-  padding: 28px 0px;
+  padding: 12px 0px;
 }
 .header-container .cart-list-empty-img {
   width: 100%;
@@ -246,6 +245,85 @@ ul, li {
   margin-left: 30%;
   font-size: 26px;
   color: rgb(133, 125, 125);
+}
+.header-container .cart-list-title {
+  margin: 8px 0px 8px 12px;
+  font-size: 1rem;
+  color: rgb(133, 125, 125);
+  font-weight: 600;
+}
+.header-container .cart-list-item {
+  padding-left: 0;
+}
+.header-container .cart-item {
+  display: flex;
+  align-items: center;
+}
+.header-container .cart-item:hover {
+  background-color: #f0e9e9;
+}
+.header-container .cart-item-img {
+  width: 42px;
+  height: 42px;
+  margin: 12px;
+}
+.header-container .cart-item-info {
+  width: 100%;
+  margin-right: 12px;
+}
+.header-container .cart-item-info-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container .cart-item-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+.header-container .cart-item-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: orange;
+}
+.header-container .cart-item-multiply {
+  font-size: 0.8rem;
+  color: rgb(133, 125, 125);
+}
+.header-container .cart-item-quantity {
+  font-size: 1rem;
+  color: rgb(133, 125, 125);
+}
+.header-container .cart-item-info-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .cart-item-description {
+  font-size: 0.8rem;
+  color: rgb(133, 125, 125);
+}
+.header-container .cart-item-remove {
+  font-size: 1rem;
+  color: #000;
+}
+.header-container .cart-item-remove:hover {
+  color: red;
+}
+.header-container .go-to-cart-btn {
+  height: 40px;
+  width: 150px;
+  background-color: orange;
+  border-radius: 6px;
+  float: right;
+  margin-right: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.header-container .go-to-cart-btn:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.2s;
 }
 .header-container .tab-des-nav {
   display: none;
