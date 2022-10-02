@@ -61,7 +61,7 @@ $('.brand-list').slick({
             settings: {
                 centerMode: true,
                 infinite: true,
-                slidesToShow: 4,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 centerPadding: '0px', 
             }

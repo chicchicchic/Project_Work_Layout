@@ -76,14 +76,14 @@
 
             <ul class="category-drop-down">
               <li class="category-drop-down-wrap">
-                <label for="" class="meal-type">
+                <div class="meal-type">
                   Meal Type
                   <span class="ti-arrow-circle-down"></span>
-                </label>
+                </div>
 
                 <div class="underline-category"></div>
 
-                <ul class="category-child-wrap">
+                <ul class="meal-type-child-wrap">
                   <li><a href="#">Appetizers & Snacks Recipes</a></li>
                   <li><a href="#">Breakfast & Brunch Recipes</a></li>
                   <li><a href="#">Desserts</a></li>
@@ -93,14 +93,14 @@
               </li>
 
               <li class="category-drop-down-wrap">
-                <label for="" class="ingredient">
+                <div class="ingredient">
                   Ingredient
                   <span class="ti-arrow-circle-down"></span>
-                </label>
+                </div>
 
                 <div class="underline-category"></div>
 
-                <ul class="category-child-wrap">
+                <ul class="ingredient-child-wrap">
                   <li><a href="#">Beef</a></li>
                   <li><a href="#">Chicken</a></li>
                   <li><a href="#">Pasta</a></li>
@@ -108,6 +108,7 @@
                   <li><a href="#">Salmon</a></li>
                 </ul>
               </li>
+              
             </ul>
           </div>
           <!-- Browse dropdown -->
@@ -123,52 +124,61 @@
           <!-- Cart dropdown -->
           <div class="cart-header">
 
-            <span class="cart-header-icon">
-              <i class="ti-shopping-cart"></i>
-            </span>
+            <div class="cart-header-btn-group">
+              <span class="cart-header-icon">
+                <i class="ti-shopping-cart"></i>
+              </span>
+  
+              <h6 class="cart-header-text">Cart items</h6>
+  
+              <h6 class="cart-header-count">
+                <span>0</span>
+              </h6>
+            </div>
 
-            <h6 class="cart-header-text">Cart items</h6>
+            <div class="cart-list cart-list-empty">
+              <img src="./images/cart-empty-img.jpg" alt="" class="cart-list-empty-img">
+              <span class="cart-list-empty-msg">
+                Cart is empty 
+              </span>
 
-            <h6 class="cart-header-count">
-              <span>0</span>
-            </h6>
+              <!-- <ul class="category-drop-down">
+                <li class="category-drop-down-wrap">
+                  <label for="" class="meal-type">
+                    Meal Type
+                    <span class="ti-arrow-circle-down"></span>
+                  </label>
+  
+                  <div class="underline-category"></div>
+  
+                  <ul class="category-child-wrap">
+                    <li><a href="#">Appetizers & Snacks Recipes</a></li>
+                    <li><a href="#">Breakfast & Brunch Recipes</a></li>
+                    <li><a href="#">Desserts</a></li>
+                    <li><a href="#">Dinners</a></li>
+                    <li><a href="#">Drinks</a></li>
+                  </ul>
+                </li>
+  
+                <li class="category-drop-down-wrap">
+                  <label for="" class="ingredient">
+                    Ingredient
+                    <span class="ti-arrow-circle-down"></span>
+                  </label>
+  
+                  <div class="underline-category"></div>
+  
+                  <ul class="category-child-wrap">
+                    <li><a href="#">Beef</a></li>
+                    <li><a href="#">Chicken</a></li>
+                    <li><a href="#">Pasta</a></li>
+                    <li><a href="#">Pork</a></li>
+                    <li><a href="#">Salmon</a></li>
+                  </ul>
+                </li>
+              </ul> -->
 
-            <ul class="category-drop-down">
-              <li class="category-drop-down-wrap">
-                <label for="" class="meal-type">
-                  Meal Type
-                  <span class="ti-arrow-circle-down"></span>
-                </label>
-
-                <div class="underline-category"></div>
-
-                <ul class="category-child-wrap">
-                  <li><a href="#">Appetizers & Snacks Recipes</a></li>
-                  <li><a href="#">Breakfast & Brunch Recipes</a></li>
-                  <li><a href="#">Desserts</a></li>
-                  <li><a href="#">Dinners</a></li>
-                  <li><a href="#">Drinks</a></li>
-                </ul>
-              </li>
-
-              <li class="category-drop-down-wrap">
-                <label for="" class="ingredient">
-                  Ingredient
-                  <span class="ti-arrow-circle-down"></span>
-                </label>
-
-                <div class="underline-category"></div>
-
-                <ul class="category-child-wrap">
-                  <li><a href="#">Beef</a></li>
-                  <li><a href="#">Chicken</a></li>
-                  <li><a href="#">Pasta</a></li>
-                  <li><a href="#">Pork</a></li>
-                  <li><a href="#">Salmon</a></li>
-                </ul>
-              </li>
-            </ul>
-
+            </div>
           </div>
           <!-- Cart dropdown -->
 
@@ -351,11 +361,13 @@
     </div> -->
 
     <!-- Brands of the company -->
-    <div class="brand">
+    <!-- <div class="brand">
 
       <div class="brand-title">
 
-        <h2 class="brand-title-content">WE'RE CURRENTLY IN THESE CITIES</h2>
+        <h2 class="brand-title-content">Popular Food</h2>
+
+        <h4>Hello we're DXC Cuisine, your new premium food delivery service at DXC Vietnam. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</h4>
 
       </div>
 
@@ -511,6 +523,41 @@
 
         </div>
 
+        <div class="brand-list-wrap">
+
+          <img src="./images/london.jpg" alt="Noddle Img" class="brand-img" />
+
+          <div class="brand-title">LONDON</div>
+
+          <div class="brand-body">
+
+            <div class="brand-body-top">
+
+              <i class="ti-user"></i>
+
+              <h3 class="happy-eaters">1600+ happy eaters</h3>
+
+            </div>
+
+            <div class="brand-body-center">
+
+              <i class="ti-star"></i>
+
+              <h3 class="top-chefs">60+ top chefs</h3>
+
+            </div>
+
+            <div class="brand-body-bottom">
+
+              <i class="ti-twitter-alt"></i>
+
+              <a href="#" class="brand-link">@omnifood_lx</a>
+
+            </div>
+
+          </div>
+
+        </div>
 
         <div class="brand-list-wrap">
 
@@ -550,7 +597,7 @@
 
       </div>
 
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <!-- <div class="footer">
