@@ -4,7 +4,12 @@
 // Header
 .header-container {
   height: auto;
-  background-color: $gray-light-color;
+  // background-color: $gray-light-color;
+  background: rgba(0, 0, 0, 0.4) url(../images/backgroud-header.jpg);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
 
   // Header Top
@@ -18,6 +23,8 @@
 
     .header-top-text {
       font-weight: bold;
+      font-size: 18px;
+      color: $font-main-color;
       align-items: center;
     }
 
@@ -30,14 +37,14 @@
       text-decoration: none;
       i {
         font-size: 20px;
-        color: $gray-color;
+        color: $font-main-color;
       }
     }
 
   }
 
   .underline-header {
-    background-color: $gray-dark-color;
+    background-color: $font-main-color;
     margin-top: 4px;
     width: 100%;
     height: 2px;
@@ -46,6 +53,10 @@
   // Header Bottom
   .header-bottom {
     display: flex;
+  }
+
+  .logo-text-bottom {
+    color: $font-main-color;
   }
 
   .logo-text-bottom,
@@ -67,13 +78,10 @@
       }
     }
 
-    input {
-      display: none;
-    }
-
     .drop-down-text {
       cursor: pointer;
       display: block;
+      color: $font-main-color;
     }
 
     .category-drop-down {
@@ -95,7 +103,7 @@
         top: -40px;
         border-width: 26px 30px;
         border-style: solid;
-        border-color: transparent transparent   $font-main-color transparent;  
+        border-color: transparent transparent $font-main-color transparent;  
       }
 
       &:after {
@@ -109,13 +117,15 @@
       }
     }
 
-
     .category-drop-down-wrap {
       margin-top: 10px;
     }
 
     .meal-type,
     .ingredient {
+      color: $gray-color;
+      font-weight: 600;
+
       span {
         float: right;
       }
@@ -127,25 +137,28 @@
       a {
         text-decoration: none;
         font-size: 18px;
-        color: $black-color;
+        color: $gray-color;
+        font-weight: 500;
+
         &:hover {
           color: $purple-color;
           font-weight: bold;
-          transition: .3s linear;
+          transition: .2s linear;
         }
       }
     }
 
     .underline-category {
       width: 100%;
-      background-color: blue;
-      height: 2px;
+      background-color: $black-color;
+      height: 1px;
     }
   }
 
   // Search Header Wrap
   .search-header-wrap {
     width: 400px;
+    position: relative;
   }
 
   .search-header {
@@ -153,20 +166,22 @@
     border: 2px solid $gray-color;
     border-radius: 4px;
     color: $purple-color;
+    font-size: 18px;
     width: 100%;
 
     &::placeholder {
-      color: $primary-color;
+      color: $gray-color;
       font-size: 16px;
     }
 
   }
   
   .search-header-btn {
-    background-color: $gray-dark-color;
-    padding: 4px 12px;
+    background-color: $black-color;
+    padding: 6px 12px;
     border-radius: 3px;
     margin-left: 1px;
+
     i {
       color: $font-main-color;
       font-size: 18px;
@@ -174,12 +189,22 @@
     }
   }
 
+  .autocom-box {
+    background-color: $gray-light-color;
+    width: calc(100% - 46px);
+    position: absolute;
+    top: 84%;
+    left: 2px;
+    box-shadow: 0 2px 10px $gray-color;
+    border-radius: 5px;
+    padding: 16px;
+  }
+
   // Cart Header
   .cart-header {
     cursor: pointer;
     position: relative;
 
-    
     &:hover {
       .cart-list {
         display: block;
@@ -198,7 +223,7 @@
     border-radius: 4px;
     height: 18px;
     padding: 18px 6px;
-    background-color: $primary-color;
+    background-color: $orange-color;
   }
 
   .cart-header-icon,
@@ -209,12 +234,12 @@
 
   .cart-header-text,
   .cart-header-count {
-    color: $font-main-color;
+    color: $black-color;
   }
 
   .cart-header-icon {
     i {
-      color: $font-main-color;
+      color: $black-color;
     }
   }
 
@@ -236,7 +261,7 @@
     width: 510px;
     border-radius: 2px;
     box-shadow: 0 2px 10px $gray-color;
-    // display: none;
+    display: none;
 
     &:after {
       content: "";
@@ -357,13 +382,14 @@
   .go-to-cart-btn {
     height: 40px;
     width: 150px;
+    font-size: 18px;
+    font-weight: 600;
     background-color: orange;
     border-radius: 6px;
     float: right;
     margin-right: 12px;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 18px;
 
     &:hover {
       cursor: pointer;
