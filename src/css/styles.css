@@ -362,92 +362,78 @@ ul, li {
   transition: 0.2s;
 }
 
-.brand {
+.product {
   margin-top: 18px;
 }
-.brand .brand-title-content {
+.product .product-title {
+  margin: 0px 16px;
+}
+.product .product-title-content {
   font-size: 28px;
   font-weight: 100;
   color: rgb(133, 125, 125);
-  text-align: center;
 }
-.brand .brand-underline {
-  width: 94px;
+.product .product-title-description {
+  font-size: 18px;
+}
+.product .product-underline {
+  width: 50%;
   height: 2px;
   margin: auto;
-  margin-top: 6px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   background-color: orange;
 }
-.brand .brand-list {
+.product .product-list {
   width: 100%;
   margin-top: 20px;
   display: flex;
 }
-.brand .brand-list-wrap {
+.product .product-list-wrap {
   width: 70%;
   margin: auto;
   padding-bottom: 14px;
   border: 2px solid rgb(133, 125, 125);
   border-radius: 7px;
 }
-.brand .brand-list-wrap .brand-img {
+.product .product-list-wrap .product-img {
   width: 100%;
   display: block;
 }
-.brand .brand-list-wrap .brand-img:hover {
+.product .product-list-wrap .product-img:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
-.brand .brand-list-wrap .brand-title {
+.product .product-list-wrap .product-content {
+  margin: 4px 16px;
+}
+.product .product-list-wrap .product-content .product-content-title {
   margin-top: 10px;
-  margin-left: 4px;
+  color: #3d3a3a;
+  font-size: 22px;
+  font-weight: bold;
+}
+.product .product-list-wrap .product-content .product-content-desc {
+  margin-top: 18px;
   color: rgb(133, 125, 125);
 }
-.brand .brand-list-wrap .brand-body {
-  margin-top: 4px;
-}
-.brand .brand-body-top,
-.brand .brand-body-center,
-.brand .brand-body-bottom {
-  display: flex;
-  padding: 6px 0px;
-}
-.brand .brand-body-top i,
-.brand .brand-body-center i,
-.brand .brand-body-bottom i {
-  padding: 0px 10px;
-}
-.brand .brand-body-top .happy-eaters,
-.brand .brand-body-top .top-chefs,
-.brand .brand-body-top .brand-link,
-.brand .brand-body-center .happy-eaters,
-.brand .brand-body-center .top-chefs,
-.brand .brand-body-center .brand-link,
-.brand .brand-body-bottom .happy-eaters,
-.brand .brand-body-bottom .top-chefs,
-.brand .brand-body-bottom .brand-link {
-  font-size: 17px;
-  margin-left: 16px;
-}
-.brand .brand-body-top .happy-eaters,
-.brand .brand-body-top .top-chefs,
-.brand .brand-body-center .happy-eaters,
-.brand .brand-body-center .top-chefs,
-.brand .brand-body-bottom .happy-eaters,
-.brand .brand-body-bottom .top-chefs {
-  color: rgb(133, 125, 125);
+.product .product-list-wrap .product-content .product-content-price {
+  margin-top: 18px;
+  color: orange;
   font-weight: 600;
 }
-.brand .brand-body-top i,
-.brand .brand-body-top .brand-link,
-.brand .brand-body-center i,
-.brand .brand-body-center .brand-link,
-.brand .brand-body-bottom i,
-.brand .brand-body-bottom .brand-link {
-  color: orange;
+.product .product-list-wrap .add-to-cart-btn {
+  margin: 20px 0px 0px;
+  border-radius: 3px;
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  font-size: 18px;
+  background-color: purple;
+  cursor: pointer;
 }
-.brand .slick-initialized .slick-slide {
-  margin: 0px 2px;
+.product .slick-initialized .slick-slide {
+  margin: 0px 6px;
 }
 
 .footer {

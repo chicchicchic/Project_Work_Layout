@@ -411,39 +411,47 @@
   
 }
 
-// Brands of the company
-.brand {
+// Products of the company
+.product {
   margin-top: 18px;
 
-  .brand-title-content {
+  .product-title {
+    margin: 0px 16px;
+  }
+
+  .product-title-content {
     font-size: 28px;
     font-weight: 100;
     color: $gray-color;
-    text-align: center;
   }
 
-  .brand-underline {
-    width: 94px;
+  .product-title-description {
+    font-size: 18px;
+  }
+
+  .product-underline {
+    width: 50%;
     height: 2px;
     margin: auto;
-    margin-top: 6px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     background-color: $orange-color;
   }
 
-  .brand-list {
+  .product-list {
     width: 100%;
     margin-top: 20px;
     display: flex;
   }
 
-  .brand-list-wrap {
+  .product-list-wrap {
     width: 70%;
     margin: auto;
     padding-bottom: 14px;
     border: 2px solid $gray-color;
     border-radius: 7px;
 
-    .brand-img {
+    .product-img {
       width: 100%;
       display: block;
 
@@ -454,44 +462,34 @@
 
     }
 
-    .brand-title {
-      margin-top: 10px;
-      margin-left: 4px;
-      color: $gray-color;
+    .product-content {
+      margin: 4px 16px;
+      .product-content-title {
+        margin-top: 10px;
+        color: $gray-dark-color;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .product-content-desc {
+        margin-top: 18px;
+        color: $gray-color;
+      }
+      .product-content-price {
+        margin-top: 18px;
+        color: $orange-color;
+        font-weight: 600;
+      }
     }
 
-    .brand-body {
-      margin-top: 4px;
-    }
-
-  }
-
-  .brand-body-top,
-  .brand-body-center,
-  .brand-body-bottom {
-    display: flex;
-    padding: 6px 0px;
-
-    i {
-      padding: 0px 10px;
-    }
-
-    .happy-eaters,
-    .top-chefs,
-    .brand-link {
-      font-size: 17px;
-      margin-left: 16px;
-    }
-
-    .happy-eaters,
-    .top-chefs {
-      color: $gray-color;
-      font-weight: 600;
-    }
-
-    i,
-    .brand-link {
-      color: $orange-color;
+    .add-to-cart-btn {
+      margin: 20px 0px 0px;
+      border-radius: 3px;
+      width: 100%;
+      height: 48px;
+      color: $font-main-color;
+      font-size: 18px;
+      background-color: $purple-color;
+      cursor: pointer;
     }
 
   }
@@ -499,7 +497,7 @@
   .slick-initialized {
 
     .slick-slide {
-      margin: 0px 2px;
+      margin: 0px 6px;
     }
 
   } 

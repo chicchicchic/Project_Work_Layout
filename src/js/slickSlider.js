@@ -1,5 +1,5 @@
 //  Brand List Slick Slider
-$('.brand-list').slick({
+$('.product-list').slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
