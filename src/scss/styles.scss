@@ -4,7 +4,6 @@
 // Header
 .header-container {
   height: auto;
-  // background-color: $gray-light-color;
   background: rgba(0, 0, 0, 0.4) url(../images/backgroud-header.jpg);
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -35,10 +34,12 @@
     .social-list-item {
       padding: 0px 12px;
       text-decoration: none;
+
       i {
         font-size: 20px;
         color: $font-main-color;
       }
+
     }
 
   }
@@ -73,9 +74,11 @@
     position: relative;
 
     &:hover {
+
       .category-drop-down {
         display: block;
       }
+
     }
 
     .drop-down-text {
@@ -134,6 +137,7 @@
     .meal-type-child-wrap,
     .ingredient-child-wrap {
       margin-left: 28px;
+
       a {
         text-decoration: none;
         font-size: 18px;
@@ -145,6 +149,7 @@
           font-weight: bold;
           transition: .2s linear;
         }
+
       }
     }
 
@@ -162,14 +167,17 @@
   }
 
   .search-header-wrap.active {
+
     .autocom-box {
       padding: 10px 8px;
       opacity: 1;
       pointer-events: auto;
       display: block;
+
       li {
         display: block;
       }
+
     }
   }
 
@@ -199,6 +207,7 @@
       font-size: 18px;
       font-weight: 600;
     }
+
   }
 
   .autocom-box {
@@ -223,6 +232,7 @@
       &:hover {
         background-color: $gray-very-light-color;
       }
+
     }
   }
 
@@ -264,9 +274,11 @@
   }
 
   .cart-header-icon {
+
     i {
       color: $black-color;
     }
+
   }
 
   .cart-header-count {
@@ -277,6 +289,7 @@
     span {
       color: $black-color;
     }
+
   }
 
   .cart-list {
@@ -309,6 +322,7 @@
       right: 14px;
       top: -30px;
     }
+    
   }
 
   // Has product
@@ -407,6 +421,7 @@
       transform: scale(0.9);
       transition: .2s;
     }
+
   }
   
 }
@@ -464,21 +479,25 @@
 
     .product-content {
       margin: 4px 16px;
+
       .product-content-title {
         margin-top: 10px;
         color: $gray-dark-color;
         font-size: 22px;
         font-weight: bold;
       }
+
       .product-content-desc {
         margin-top: 18px;
         color: $gray-color;
       }
+
       .product-content-price {
         margin-top: 18px;
         color: $orange-color;
         font-weight: 600;
       }
+
     }
 
     .add-to-cart-btn {
@@ -507,48 +526,20 @@
 .footer {
   width: 100%;
   background-color: $gray-dark-color;
+  margin-top: 20px;
 
-  @media only screen and (min-width: 1024px) {
-    margin-top: 20px;
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
   }
 
-  .underline-footer {
-    background-color: $gray-light-color;
-    width: 336px;
-    height: 2px;
-    margin: auto;
-
-    @media only screen and (min-width: 1024px) {
-      width: 100%;
-    }
-
-  }
-
+  // Info list
   .info-list {
     padding: 12px 0px;
   }
 
-  .info-list-wrap {
-    text-align: center;
-
-    @media only screen and (min-width: 740px) {
-      display: flex;
-      justify-content: space-around;
-    }
-
-    @media only screen and (min-width: 1024px) {
-      justify-content: start;
-    }
-
-  }
-
   .info-list-item {
-    padding: 10px 0px;
-
-    @media only screen and (min-width: 1024px) {
-      padding: 0px 26px;
-    }
-
+    padding: 6px 26px;
   }
 
   .info-item-link {
@@ -559,71 +550,22 @@
     &:hover {
       color: $font-main-color;
     } 
-
   }
 
-  .social-list-wrap {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
+  // Download List
+  .footer-download {
+    margin: 26px;
 
-    @media only screen and (min-width: 740px) and (max-width: 1023px) {
-      justify-content: space-evenly;
-    }
-
-    @media only screen and (min-width: 1024px) {
-      justify-content: center;
-    }
-
-  }
-
-  .social-list-item {
-
-    @media only screen and (min-width: 1024px) {
-      padding: 0px 26px;
-    }
-
-  }
-
-  .social-item-link {
-    color: $gray-light-color;
-    font-size: 40px;
-    text-decoration: none;
-
-    &:hover {
+    .company-name {
       color: $font-main-color;
-    } 
-
-  }
-
-  .description-website {
-    width: 90%;
-    margin: auto;
-    padding: 20px 0px;
-  }
-
-  .description-content {
-    color: $gray-light-color;
-    font-size: 17px;
-    text-align: center;
-  }
-
-  .created-address-website {
-    width: 90%;
-    margin: auto;
-    padding: 20px 0px;
-  }
-
-  .created-address-content {
-    color: $gray-light-color;
-    font-size: 17px;
-    text-align: center;
-
-    .heart-icon {
-      color: $red-color;
     }
-
   }
+
+  .download-app-img {
+    width: 200px;
+    height: 50px;
+  }
+ 
 }
 
 

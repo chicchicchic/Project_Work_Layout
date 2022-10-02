@@ -1,9 +1,9 @@
-//  Brand List Slick Slider
+//  Products List Slick Slider
 $('.product-list').slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     centerMode:true,
     centerPadding: '30px', 
